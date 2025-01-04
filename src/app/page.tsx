@@ -1,5 +1,4 @@
 import BlogCard from "@/components/BlogCard";
-import Image from "next/image";
 import { client } from "../sanity/lib/client";
 
 export const revalidate = 60; //seconds
@@ -11,7 +10,7 @@ export default async function Home() {
       "slug":slug.current
   }`;
 
-  const posts:Post[] = await client.fetch(query)
+  const posts: Post[] = await client.fetch(query);
   // console.log(posts)
 
   return (
@@ -20,12 +19,9 @@ export default async function Home() {
         Most Recent blogs
       </h1>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {
-          posts.map((post:Post)=>(
-            <BlogCard post={post} key={post.slug} />
-          ))
-        }
-
+        {posts.map((post: Post) => (
+          <BlogCard post={post} key={post.slug} />
+        ))}
       </section>
     </main>
   );

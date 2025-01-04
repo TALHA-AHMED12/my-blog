@@ -34,40 +34,29 @@ export const post = defineType({
     defineField({
       name: "image",
       type: "image",
-      title:'Image',
+      title: "Image",
     }),
     defineField({
-        name:'content',
-        type:'array',
-        title:'Content',
-        of:[
-            defineArrayMember({
-                type:'block'
-            })
-        ]
+      name: "content",
+      type: "array",
+      title: "Content",
+      of: [
+        defineArrayMember({
+          type: "block",
+        }),
+      ],
     }),
     defineField({
-        name:'author',
-        type:'reference',
-        title:'Author',
-        to:[{
-            type:'author'
-        }]
-    })
+      name: "author",
+      type: "reference",
+      title: "Author",
+      to: [
+        {
+          type: "author",
+        },
+      ],
+    }),
 
-
-    // {
-    //     name:'gender',
-    //     type:'string',
-    //     title:'Gender',
-    //     options:{
-    //         list:[
-    //             {title:'Male',value:'male'},
-    //             {title:'Female',value:'female'}
-    //         ],
-    //         layout:'radio',
-    //         direction:'horizontal'
-    //     }
-    // }
+    
   ],
 });

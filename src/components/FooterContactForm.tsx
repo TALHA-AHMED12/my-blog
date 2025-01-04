@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FooterContactForm() {
   return (
-    <form className="bg-accentDarkSecondary px-6 sm:px-8 lg:px-12 py-6 w-full md:w-1/2 ">
+    <form className="bg-accentDarkSecondary px-12 sm:px-10 lg:px-14 py-14 w-full md:w-full lg:w-full xl:w-full 2xl:w-full">
       <div className="w-full">
         <h2 className="text-3xl font-bold mb-5 text-dark text-center uppercase">
           reach us

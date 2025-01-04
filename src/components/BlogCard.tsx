@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "../sanity/lib/image";
 
-export default function BlogCard({post}:{post:Post}) {
+export default function BlogCard({ post }: { post: Post }) {
   return (
     <section className="flex flex-col justify-between h-[480px]  rounded bg-light/90 dark:bg-dark/40 shadow-md shadow-gray-300 dark:shadow-black/80 group hover:scale-105 transition-transform ease-out duration-700">
       {/* Image Section*/}
