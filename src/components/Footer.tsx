@@ -1,8 +1,5 @@
-import Link from "next/link";
 import React from "react";
 import FooterContactForm from "./FooterContactForm";
-import SocialMedia from "./SocialMedia";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,7 +11,7 @@ export default function Footer() {
         <div className="flex justify-center items-center gap-x-2 text-sm text-light">
           <em>
             <div className="text-lg italic font-semibold text-accentDarkPrimary">
-              PAKISTAN'S
+              PAKISTAN&apos;S
             </div>
           </em>
           <em>
